@@ -2,10 +2,11 @@ package articles
 
 import (
 	_ "fmt"
+	"strconv"
+
 	"github.com/jinzhu/gorm"
 	"github.com/wangzitian0/golang-gin-starter-kit/common"
 	"github.com/wangzitian0/golang-gin-starter-kit/users"
-	"strconv"
 )
 
 type ArticleModel struct {
@@ -124,7 +125,7 @@ func (self *ArticleModel) getComments() error {
 	db := common.GetDB()
 	tx := db.Begin()
 	tx.Model(self).Related(&self.Comments, "Comments")
-	for i, _ := range self.Comments {
+	for i := range self.Comments {
 		tx.Model(&self.Comments[i]).Related(&self.Comments[i].Author, "Author")
 		tx.Model(&self.Comments[i].Author).Related(&self.Comments[i].Author.UserModel)
 	}
@@ -193,7 +194,7 @@ func FindManyArticle(tag, author, limit, offset, favorited string) ([]ArticleMod
 		db.Offset(offset_int).Limit(limit_int).Find(&models)
 	}
 
-	for i, _ := range models {
+	for i := range models {
 		tx.Model(&models[i]).Related(&models[i].Author, "Author")
 		tx.Model(&models[i].Author).Related(&models[i].Author.UserModel)
 		tx.Model(&models[i]).Related(&models[i].Tags, "Tags")
@@ -226,7 +227,7 @@ func (self *ArticleUserModel) GetArticleFeed(limit, offset string) ([]ArticleMod
 
 	tx.Where("author_id in (?)", articleUserModels).Order("updated_at desc").Offset(offset_int).Limit(limit_int).Find(&models)
 
-	for i, _ := range models {
+	for i := range models {
 		tx.Model(&models[i]).Related(&models[i].Author, "Author")
 		tx.Model(&models[i].Author).Related(&models[i].Author.UserModel)
 		tx.Model(&models[i]).Related(&models[i].Tags, "Tags")
