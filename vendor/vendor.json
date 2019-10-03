@@ -51,6 +51,12 @@
 			"revisionTime": "2017-07-11T15:28:08Z"
 		},
 		{
+			"checksumSHA1": "rST0S8cuVbM57VmJhWXhKNUkKTc=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": "beb879e4754af8d25b9f326c20d831e518ad645f",
+			"revisionTime": "2019-09-30T06:22:12Z"
+		},
+		{
 			"checksumSHA1": "8UlyJTegyrXbE8UErbf2lH7X4AM=",
 			"path": "github.com/gin-gonic/gin/render",
 			"revision": "aa6d2d29f8ac39c365aa5b72fdec01029b0d5264",
@@ -117,6 +123,12 @@
 			"revisionTime": "2017-07-11T23:04:30Z"
 		},
 		{
+			"checksumSHA1": "O5KNHAjNKSO1Wh5/4JSnp/KXu9U=",
+			"path": "github.com/leodido/go-urn",
+			"revision": "a67a23e1c1af3c66528573bb86a87246477277c1",
+			"revisionTime": "2018-12-04T09:21:09Z"
+		},
+		{
 			"checksumSHA1": "U6lX43KDDlNOn+Z0Yyww+ZzHfFo=",
 			"path": "github.com/mattn/go-isatty",
 			"revision": "fc9e8d8ef48496124e79ae0df75490096eccf6fe",
@@ -171,6 +183,36 @@
 			"revisionTime": "2017-06-20T10:48:52Z"
 		},
 		{
+			"checksumSHA1": "dRsoG7ycCiZMg6gCKn5DJNZr+D8=",
+			"path": "github.com/wangzitian0/golang-gin-starter-kit/articles",
+			"revision": "9423bbefbc22d77939a18069037a3f08fd4f5592",
+			"revisionTime": "2017-11-03T11:56:06Z"
+		},
+		{
+			"checksumSHA1": "0GZN6cNyYugHqxefkyAVTqJpb1M=",
+			"path": "github.com/wangzitian0/golang-gin-starter-kit/common",
+			"revision": "9423bbefbc22d77939a18069037a3f08fd4f5592",
+			"revisionTime": "2017-11-03T11:56:06Z"
+		},
+		{
+			"checksumSHA1": "5aXQlEbUQhrpCjlybC/sVMnZBxE=",
+			"path": "github.com/wangzitian0/golang-gin-starter-kit/users",
+			"revision": "9423bbefbc22d77939a18069037a3f08fd4f5592",
+			"revisionTime": "2017-11-03T11:56:06Z"
+		},
+		{
+			"checksumSHA1": "oCH3J96RWvO8W4xjix47PModpio=",
+			"path": "golang.org/x/crypto/bcrypt",
+			"revision": "f9e2070545dcd4128a854a97ddf10fbfc3c4b6e4",
+			"revisionTime": "2019-09-11T14:47:38Z"
+		},
+		{
+			"checksumSHA1": "q+XI9g44wd9mYvf3S5Wo8YZjAus=",
+			"path": "golang.org/x/crypto/blowfish",
+			"revision": "f9e2070545dcd4128a854a97ddf10fbfc3c4b6e4",
+			"revisionTime": "2019-09-11T14:47:38Z"
+		},
+		{
 			"checksumSHA1": "Y+HGqEkYM15ir+J93MEaHdyFy0c=",
 			"path": "golang.org/x/net/context",
 			"revision": "f01ecb60fe3835d80d9a0b7b2bf24b228c89260e",
@@ -195,6 +237,12 @@
 			"revisionTime": "2016-07-18T13:41:25Z"
 		},
 		{
+			"checksumSHA1": "Pxy1kmAM4h2XhsWnaWN+fIL3ju4=",
+			"path": "gopkg.in/go-playground/validator.v9",
+			"revision": "cd1bd581694a11c089aea885a26247c5f783a4cf",
+			"revisionTime": "2019-09-29T22:20:42Z"
+		},
+		{
 			"checksumSHA1": "4GRl0rg8N/CYMv8aadrBXVe0JSo=",
 			"path": "gopkg.in/stretchr/testify.v1",
 			"revision": "69483b4bd14f5845b5a1e55bca19e954e827f1d0",
@@ -207,5 +255,5 @@
 			"revisionTime": "2017-07-12T05:45:46Z"
 		}
 	],
-	"rootPath": "github.com/wangzitian0/golang-gin-starter-kit"
+	"rootPath": "github.com/hxuanhung/golang-gin-realworld-example-app"
 }
