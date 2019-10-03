@@ -5,13 +5,13 @@ import (
 
 	"gopkg.in/gin-gonic/gin.v1"
 
+	"github.com/hxuanhung/golang-gin-realworld-example-app/articles"
+	"github.com/hxuanhung/golang-gin-realworld-example-app/common"
+	"github.com/hxuanhung/golang-gin-realworld-example-app/users"
 	"github.com/jinzhu/gorm"
-	"github.com/wangzitian0/golang-gin-starter-kit/articles"
-	"github.com/wangzitian0/golang-gin-starter-kit/common"
-	"github.com/wangzitian0/golang-gin-starter-kit/users"
 )
 
-func Migrate(db *gorm.DB) {
+func migrate(db *gorm.DB) {
 	users.AutoMigrate()
 	db.AutoMigrate(&articles.ArticleModel{})
 	db.AutoMigrate(&articles.TagModel{})
@@ -23,7 +23,7 @@ func Migrate(db *gorm.DB) {
 func main() {
 
 	db := common.Init()
-	Migrate(db)
+	migrate(db)
 	defer db.Close()
 
 	r := gin.Default()
